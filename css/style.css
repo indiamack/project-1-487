@@ -1,0 +1,143 @@
+@supports (grid-area:auto){
+
+.site{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 40px 115px 80px 60px 100px 100px 100px 100px 100px 100px 150px 40px;
+  grid-template-areas:
+    'hd hd hd hd hd hd hd hd'
+    'nv nv nv nv nv nv nv nv'
+    '. srch srch srch srch srch srch .'
+    '. anc anc anc anc anc anc .'
+    '. tsk tsk tsk . . . .'
+    '. . . . al al al .'
+    '. recs recs recs . . . .'
+    '. . . . ct ct ct .'
+    '. . . . kn kn kn .'
+    '. wch wch wch wch wch wch .'
+    'ft ft ft ft ft ft ft ft';
+  grid-gap:0.2em;
+}
+
+.header{
+  grid-column: 1/9;
+  background: #33F8AC;
+}
+
+.navbar{
+  grid-column: 1/9;
+  background: #1B1F8B;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search{
+  grid-column: 2/8;
+  background: #3FE4FA;
+}
+
+.announce{
+  grid-column: 2/8;
+  background: #3DBCC1;
+}
+
+.tasks{
+  grid-column: 2/4;
+  background: #2BB9AE;
+  grid-row-end: span 2;
+}
+
+.analytics{
+  grid-column: 4/8;
+  background: #B8DCF7;
+  grid-row-end: span 3;
+}
+
+.recs{
+  grid-column: 2/4;
+  background: #105F59;
+  grid-row-end: span 4;
+}
+
+.contact{
+  grid-column: 4/8;
+  background: #B0F7F4;
+  grid-row-end: span 2;
+}
+
+.know{
+  grid-column: 4/8;
+  background: #6FD2EA;
+}
+
+.watch{
+  grid-column: 2/8;
+  background: #A2FA97;
+}
+
+.footer{
+  grid-column: 1/9;
+  background: #76BDF2;
+}
+
+@media screen and (max-width:767px){
+
+  .site{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 115px 80px 60px 100px 100px 100px 100px 100px 100px 150px 40px;
+    grid-template-areas:
+      'hd hd hd hd hd hd hd hd'
+      'nv nv nv nv nv nv nv nv'
+      '. srch srch srch srch srch srch .'
+      '. anc anc anc anc anc anc .'
+      '. al al al al al al .'
+      '. ct ct ct ct ct ct .'
+      '. kn kn kn kn kn kn .'
+      '. tsk tsk tsk tsk tsk tsk .'
+      '. recs recs recs recs recs recs .'
+      '. wch wch wch wch wch wch .'
+      'ft ft ft ft ft ft ft ft';
+    grid-gap:0.2em;
+  }
+
+  .tasks{
+    grid-column: tsk;
+    background: #2BB9AE;
+    grid-row-end: span 2;
+  }
+
+  .analytics{
+    grid-column: al;
+    background: #B8DCF7;
+    grid-row-end: span 3;
+  }
+
+  .recs{
+    grid-column: recs;
+    background: #105F59;
+    grid-row-end: span 4;
+  }
+
+  .contact{
+    grid-column: ct;
+    background: #B0F7F4;
+    grid-row-end: span 2;
+  }
+
+  .know{
+    grid-column: kn;
+    background: #6FD2EA;
+  }
+  .watch{
+    grid-column: wch;
+    background: #A2FA97;
+  }
+
+  .footer{
+    grid-column: ft;
+    background: #76BDF2;
+  }
+}
+}
