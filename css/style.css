@@ -3,7 +3,7 @@
 .site{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 40px 115px 80px 60px 100px 100px 100px 100px 100px 100px 150px 40px;
+  grid-template-rows: 40px 115px 100px 60px 100px 100px 100px 100px 100px 100px 150px 40px;
   grid-template-areas:
     'hd hd hd hd hd hd hd hd'
     'nv nv nv nv nv nv nv nv'
@@ -16,7 +16,6 @@
     '. . . . kn kn kn .'
     '. wch wch wch wch wch wch .'
     'ft ft ft ft ft ft ft ft';
-  grid-gap:0.2em;
 }
 
 /* Top Header --------------------------*/
@@ -42,11 +41,18 @@
 .navbar{
   grid-column: 1/9;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   background-image: url('../images/menu-background.png');
 }
 
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
 .icon{
   display: flex;
   flex-direction: column;
@@ -66,8 +72,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px;
+  border-radius: 3px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-  /* Search Form */ 
+  /* Search Form */
   .search-container{
     display: block;
     float: right;
@@ -93,16 +102,89 @@
     border-bottom-left-radius: 2px;
   }
 
+/* Announcements --------------------------*/
 .announce{
   grid-column: 2/8;
-  background: #3DBCC1;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #e9e9e9;
+  border-radius: 0px;
 }
+
+.announce h3{
+  color: #fe7f13;
+}
+
+.announce p{
+  color: #777777;
+}
+
+/* Tasks --------------------------*/
 
 .tasks{
   grid-column: 2/4;
-  background: #2BB9AE;
+  background: #ffffff;
   grid-row-end: span 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'tk tk tk'
+    'one one one'
+    'two two two'
+    'three three three';
+  border: 1px solid #e9e9e9;
+  border-top: none;
 }
+
+.tk{
+  grid-column: 1/2;
+}
+
+.tk h2{
+  color: #3c9ff5;
+}
+
+.one{
+  grid-column: 1/2;
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+}
+
+.one p{
+  border: 1px solid #e9e9e9;
+  border-top: none;
+  background-color: #3c9ff5;
+}
+
+.two{
+  grid-column: 1/2;
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+}
+
+.three{
+  grid-column: 1/2;
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+}
+
+.person-number{
+  display: flex;
+  align-items: center;
+  border: 1px solid #e9e9e9;
+  border-radius: 3px;
+  width: 50px;
+  height: 30px;
+  justify-content: space-evenly;
+
+}
+
 
 .ana{
   grid-column: 4/8;

@@ -14,7 +14,7 @@
 { display: inline-block; background: url('../images/spritesheet.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
 
 .menu-background { background-position: -1px -0px; width: 1200px; height: 110px; }
-.content-shade { background-position: -1px -111px; width: 970px; height: 250px; }
+.content-shade { background-position: -1px -111px; width: 970px; height: 250px;}
 .bargraph { background-position: -1px -362px; width: 420px; height: 187px; }
 .watch-2 { background-position: -422px -362px; width: 268px; height: 171px; }
 .watch-1 { background-position: -691px -362px; width: 263px; height: 150px; }
