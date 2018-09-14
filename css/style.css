@@ -19,11 +19,26 @@
   grid-gap:0.2em;
 }
 
+/* Top Header --------------------------*/
 .header{
   grid-column: 1/9;
-  background: #33F8AC;
+  background: #1f8be1;
+  display:flex;
+  align-items: center;
+  color: white;
 }
 
+.header h2{
+  position: absolute;
+  right: 5em;
+  transition: all .2s ease-in-out;
+}
+
+.header h2:hover{
+  transform: scale(1.1);
+}
+
+/* Navigation --------------------------*/
 .navbar{
   grid-column: 1/9;
   display: flex;
@@ -42,10 +57,41 @@
   margin-right: 1%;
 }
 
+/* Seach Bar --------------------------*/
 .search{
   grid-column: 2/8;
-  background: #3FE4FA;
+  background: #33cc66;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
 }
+  /* Search Form */ 
+  .search-container{
+    display: block;
+    float: right;
+  }
+
+  .search .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+
+  .search input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 21px;
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
 
 .announce{
   grid-column: 2/8;
@@ -93,7 +139,7 @@
 
 @media screen and (max-width:767px){
 
-  
+
 
   .tasks{
     grid-column: tsk;
