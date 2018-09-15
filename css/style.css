@@ -126,7 +126,7 @@ svg {
 .tasks{
   grid-column: 2/4;
   background: #ffffff;
-  grid-row-end: span 2;
+  grid-row-end: span 3;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -225,7 +225,11 @@ svg {
 .activity-container{
   display: flex;
   flex-wrap: wrap;
-  width:60%;
+  width:70%;
+  justify-content: space-between;
+  border-right: 1px solid #e9e9e9;
+  padding-left: 15px;
+  padding-right: 15px;
 }
   /* Dropbox -------*/
 
@@ -282,44 +286,42 @@ svg {
     }
 
   /* Social Bar -------*/
-      /* Customize the label (the container) */
-      .container {
-        display: block;
+      .social {
+        display: flex;
+        justify-content: center;
         position: relative;
         padding-left: 35px;
         margin-bottom: 12px;
         cursor: pointer;
-        font-size: 22px;
+        font-size: 12px;
+        font-family: MyriadPro;
+        color:white;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
       }
 
-      /* Hide the browser's default checkbox */
-      .container input {
+      .social input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
       }
 
-      /* Create a custom checkbox */
       .checkmark {
         position: absolute;
-        top: 0;
-        left: 0;
         height: 25px;
         width: 25px;
         background-color: #eee;
       }
 
       /* On mouse-over, add a grey background color */
-      .container:hover input ~ .checkmark {
+      .social:hover input ~ .checkmark {
         background-color: #ccc;
       }
 
       /* When the checkbox is checked, add a blue background */
-      .container input:checked ~ .checkmark {
+      .social input:checked ~ .checkmark {
         background-color: #2196F3;
       }
 
@@ -331,12 +333,12 @@ svg {
       }
 
       /* Show the checkmark when checked */
-      .container input:checked ~ .checkmark:after {
+      .social input:checked ~ .checkmark:after {
         display: block;
       }
 
       /* Style the checkmark/indicator */
-      .container .checkmark:after {
+      .social .checkmark:after {
         left: 9px;
         top: 5px;
         width: 5px;
@@ -348,14 +350,83 @@ svg {
         transform: rotate(45deg);
       }
 
+      .fb-box{
+        border-radius:3px;
+        background-color: #114570;
+        padding: 2px;
+      }
+
+      .tw-box{
+        border-radius:3px;
+        background-color: #2298f4;
+        padding: 2px;
+      }
+
+      .fs-box{
+        border-radius:3px;
+        background-color: #3a599b;
+        padding: 2px;
+      }
+
+      .go-box{
+        border-radius:3px;
+        background-color: #31cc66;
+        padding: 2px;
+      }
+
       .piegraphs{
         display: flex;
         flex-direction: column;
       }
+
+/* Recommendations --------------------------*/
 .recs{
   grid-column: 2/4;
-  background: #105F59;
+  background: #ffffff;
   grid-row-end: span 4;
+  border: 1px solid #e9e9e9;
+  border-top:none;
+  padding: 5%;
+}
+
+.recs h2{
+  margin-top: 0;
+}
+
+.rec-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.rec-item{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+  border-bottom: 1px dotted #e9e9e9;
+  padding-bottom:  5%;
+}
+
+.rec-item h4:hover,p:hover{
+  color:black;
+}
+
+.rec-icon{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rec-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5%;
+  flex-wrap: wrap;
+  word-wrap: normal;
+}
+
+.rec-text h4,p{
+  margin: 0;
 }
 
 .contact{
@@ -430,6 +501,14 @@ svg {
   src: url('../css/fonts/MyriadPro-Regular.otf');
 }
 
-h1,h2,h3,p{
+h1,h2,h3,h4,p{
   font-family: MyriadPro;
+}
+
+h2{
+  color: #5ab1f7;
+}
+
+h4,p{
+  color: #999999;
 }

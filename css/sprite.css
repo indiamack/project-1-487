@@ -45,6 +45,7 @@
 .knowarrow-left { background-position: -978px -578px; width: 22px; height: 50px; }
 .knowarrow-right { background-position: -1001px -578px; width: 22px; height: 50px; }
 .reccheck { background-position: -1024px -578px; width: 22px; height: 20px; }
+.reccheck:hover { background-position: -1024px -578px; width: 22px; height: 20px; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); filter: grayscale(100%);}
 .help { background-position: -1047px -578px; width: 20px; height: 20px; position:absolute; right: 4em; transition: all .2s ease-in-out;}
 .help:hover{transform: scale(1.1);}
 .person:hover { background-position: -651px -588px; width: 20px; height: 20px; }
@@ -52,8 +53,9 @@
 .settings { background-position: -1161px -594px; width: 20px; height: 20px; position:absolute; right: 1em; transition: all .2s ease-in-out;}
 .settings:hover { background-position: -1161px -594px; width: 20px; height: 20px; transform: scale(1.1);}
 .article { background-position: -397px -596px; width: 19px; height: 23px; }
+.article:hover{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); filter: grayscale(100%);}
 .recshadow { background-position: -1px -599px; width: 19px; height: 12px; }
-.checkshadow { background-position: -1183px -111px; width: 16px; height: 12px; }
+.checkshadow { background-position: -1183px -111px; width: 16px; height: 12px; margin-right: 6px;}
 .fb-active { background-position: -1183px -124px; width: 16px; height: 16px; }
 .fb { background-position: -1183px -141px; width: 16px; height: 16px; }
 .foursquare:hover { background-position: -1183px -158px; width: 16px; height: 16px; }
@@ -66,4 +68,5 @@
 .banner-right { background-position: -1183px -301px; width: 15px; height: 40px; }
 .footerarrow { background-position: -1183px -342px; width: 14px; height: 9px; }
 .lightbulb { background-position: -1183px -352px; width: 14px; height: 23px; }
+.lightbulb:hover{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); filter: grayscale(100%);}
 .lightbulbshadow { background-position: -955px -362px; width: 12px; height: 12px; }
