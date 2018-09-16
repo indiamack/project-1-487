@@ -20,28 +20,44 @@
 }
 
 /* Top Header --------------------------*/
-.header{
+.head{
   grid-column: 1/9;
   background: #1f8be1;
   display:flex;
   align-items: center;
   justify-content: space-between;
   color: white;
+  padding-left: 100px;
 }
 
-.header-2{
+.head h1{
+  font-size: 24px;
+}
+
+.header-right{
   display: flex;
   justify-content: space-around;
-  width: 25%;
-}
-.header h2{
-  transition: all .2s ease-in-out;
+  width: 15%;
+  align-items: center;
+  padding-right: 100px;
 }
 
-.header h2:hover{
+.header-right h2{
+  transition: all .2s ease-in-out;
+  margin: 0;
+  color: white;
+  font-size: 14px;
+}
+
+.header-right h2:hover{
   transform: scale(1.1);
 }
 
+.divider-3{
+  width: 1px;
+  height: 20px;
+  background-color: #1c85d8;
+}
 
 /* Navigation --------------------------*/
 .navbar{
