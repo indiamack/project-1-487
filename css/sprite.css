@@ -19,8 +19,8 @@
 .watch-2 { background-position: -422px -362px; width: 268px; height: 171px; }
 .watch-1 { background-position: -691px -362px; width: 263px; height: 150px; }
 .watch-3 { background-position: -691px -513px; width: 263px; height: 160px; }
-.contacts-banner { background-position: -972px -111px; width: 210px; height: 211px; }
-.customers-banner { background-position: -972px -323px; width: 210px; height: 211px; }
+.contacts-banner { background-position: -972px -111px; width: 210px; height: 211px; position: absolute; bottom:0; margin-bottom: 15px;}
+.customers-banner { background-position: -972px -323px; width: 210px; height: 211px; position: absolute; bottom:0; margin-bottom: 15px;}
 .piegraph-channels { background-position: -422px -534px; width: 80px; height: 80px; }
 .piegraph-referrals { background-position: -503px -534px; width: 80px; height: 80px; }
 .spritesheet { background-position: -584px -534px; width: 66px; height: 620px; }
@@ -64,8 +64,8 @@
 .twitter { background-position: -1183px -209px; width: 16px; height: 16px; }
 .youtube:hover { background-position: -1183px -226px; width: 16px; height: 16px; }
 .youtube { background-position: -1183px -243px; width: 16px; height: 16px; }
-.banner-left { background-position: -1183px -260px; width: 15px; height: 40px; }
-.banner-right { background-position: -1183px -301px; width: 15px; height: 40px; }
+.banner-left { background-position: -1183px -260px; width: 15px; height: 40px; position: absolute; top:25%;left:-15px;}
+.banner-right { background-position: -1183px -301px; width: 15px; height: 40px;position: absolute; top:25%;right:-15px; }
 .footerarrow { background-position: -1183px -342px; width: 14px; height: 9px; }
 .lightbulb { background-position: -1183px -352px; width: 14px; height: 23px; }
 .lightbulb:hover{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); filter: grayscale(100%);}
