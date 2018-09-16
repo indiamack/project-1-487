@@ -40,17 +40,16 @@
 .logout { background-position: -651px -534px; width: 30px; height: 30px; }
 .search-glass { background-position: -397px -550px; width: 23px; height: 22px; }
 .anncouncearrow-left { background-position: -651px -565px; width: 22px; height: 22px; }
-.announcearrow-right { background-position: -397px -573px; width: 22px; height: 22px; }
+.announcearrow-right { background-position: -397px -573px; width: 22px; height: 22px;}
 .check-analytics { background-position: -955px -578px; width: 22px; height: 21px; }
 .knowarrow-left { background-position: -978px -578px; width: 22px; height: 50px; }
 .knowarrow-right { background-position: -1001px -578px; width: 22px; height: 50px; }
 .reccheck { background-position: -1024px -578px; width: 22px; height: 20px; }
 .reccheck:hover { background-position: -1024px -578px; width: 22px; height: 20px; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); filter: grayscale(100%);}
-.help { background-position: -1047px -578px; width: 20px; height: 20px; position:absolute; right: 4em; transition: all .2s ease-in-out;}
+.help { background-position: -1047px -578px; width: 20px; height: 20px; transition: all .2s ease-in-out;}
 .help:hover{transform: scale(1.1);}
-.person:hover { background-position: -651px -588px; width: 20px; height: 20px; }
 .person { background-position: -1140px -594px; width: 20px; height: 20px; }
-.settings { background-position: -1161px -594px; width: 20px; height: 20px; position:absolute; right: 1em; transition: all .2s ease-in-out;}
+.settings { background-position: -1161px -594px; width: 20px; height: 20px; transition: all .2s ease-in-out;}
 .settings:hover { background-position: -1161px -594px; width: 20px; height: 20px; transform: scale(1.1);}
 .article { background-position: -397px -596px; width: 19px; height: 23px; }
 .article:hover{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); filter: grayscale(100%);}
