@@ -3,7 +3,7 @@
 .site{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 40px 115px 100px 60px 100px 100px 100px 100px 100px 100px 100px 100px 100px 230px 40px;
+  grid-template-rows: 40px 115px 100px 60px 100px 100px 100px 100px 100px 100px 100px 100px 100px 230px 120px;
   grid-template-areas:
     'hd hd hd hd hd hd hd hd'
     'nv nv nv nv nv nv nv nv'
@@ -111,6 +111,7 @@ svg {
   justify-content: space-evenly;
   border: 1px solid #e9e9e9;
   border-radius: 0px;
+  border-bottom: none;
 }
 
 .announce h3{
@@ -136,7 +137,8 @@ svg {
     'two two two'
     'three three three';
   border: 1px solid #e9e9e9;
-  border-top: none;
+  border-bottom: none;
+  box-shadow: inset 0px 3px 4px #fcfcfc;
 }
 
 .tk{
@@ -210,7 +212,10 @@ svg {
   grid-column: 4/8;
   background: #ffffff;
   grid-row-end: span 4;
+  border-top: 1px solid #e9e9e9;
   border-right: 1px solid #e9e9e9;
+  box-shadow: inset 0px 3px 4px #fcfcfc;
+  border-bottom: none;
 }
 
 .ana h2{
@@ -385,7 +390,7 @@ svg {
   background: #ffffff;
   grid-row-end: span 6;
   border: 1px solid #e9e9e9;
-  border-top:none;
+  box-shadow: inset 0px 3px 4px #fcfcfc;
   padding: 5%;
 }
 
@@ -437,6 +442,8 @@ svg {
   grid-row-end: span 3;
   border: 1px solid #e9e9e9;
   border-left: none;
+  border-bottom: none;
+  box-shadow: inset 0px 3px 4px #fcfcfc;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -463,7 +470,7 @@ svg {
   background: #ffffff;
   grid-row: span 2;
   border: 1px solid #e9e9e9;
-  border-top:none;
+  box-shadow: inset 0px 3px 4px #fcfcfc;
   border-left: none;
   display:flex;
   justify-content: center;
@@ -512,11 +519,48 @@ svg {
   height: 160px;
   display: flex;
 }
+
+/* Footer --------------------------*/
 .footer{
   grid-column: 1/9;
-  background: #76BDF2;
+  background: #f3f3f3;
+  margin-top: 60px;
+  box-shadow: 0px -5px 20px #b1b1b1;
+  border-top: 2px solid white;
+  display: flex;
 }
 
+.footer-1{
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+  border-right: 1px solid #e9e9e9;
+  align-items: center;
+}
+
+.footer-2{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  border-right: 1px solid #e9e9e9;
+  align-items: center;
+}
+
+.footer-3{
+  display: flex;
+  justify-content: space-around;
+  width: 8.33%;
+  border-right: 1px solid #e9e9e9;
+  align-items: center;
+}
+
+.footer-4{
+  display: flex;
+  justify-content: center;
+  width: 8.33%;
+  border-right: 1px solid #e9e9e9;
+  align-items: center;
+}
 @media screen and (max-width:767px){
 
 
