@@ -21,8 +21,8 @@
 .watch-3 { background-position: -691px -513px; width: 263px; height: 160px; margin-left: auto; }
 .contacts-banner { background-position: -972px -111px; width: 210px; height: 211px; position: absolute; bottom:0; margin-bottom: 15px;}
 .customers-banner { background-position: -972px -323px; width: 210px; height: 211px; position: absolute; bottom:0; margin-bottom: 15px;}
-.piegraph-channels { background-position: -422px -534px; width: 80px; height: 80px; }
-.piegraph-referrals { background-position: -503px -534px; width: 80px; height: 80px; }
+.piegraph-channels { background-position: -422px -534px; width: 80px; height: 80px; margin-bottom: 20px;}
+.piegraph-referrals { background-position: -503px -534px; width: 80px; height: 80px; margin-bottom: 20px;}
 .spritesheet { background-position: -584px -534px; width: 66px; height: 620px; }
 .customers:hover { background-position: -955px -535px; width: 62px; height: 42px; }
 .customers { background-position: -1018px -535px; width: 62px; height: 42px; }
@@ -37,13 +37,15 @@
 .page { background-position: -265px -550px; width: 45px; height: 50px; }
 .analytics:hover { background-position: -311px -550px; width: 42px; height: 50px; }
 .analytics { background-position: -354px -550px; width: 42px; height: 50px; }
-.logout { background-position: -651px -534px; width: 30px; height: 30px; }
+.logout { background-position: -651px -534px; width: 30px; height: 30px; border: 5px solid white; border-radius: 3px; box-shadow: 0px 2px 1px #cac9c9; margin-left: 7px;}
 .search-glass { background-position: -397px -550px; width: 23px; height: 22px; }
-.anncouncearrow-left { background-position: -651px -565px; width: 22px; height: 22px; }
-.announcearrow-right { background-position: -397px -573px; width: 22px; height: 22px;}
+.anncouncearrow-left { background-position: -651px -565px; width: 22px; height: 22px; transition: all .2s ease-in-out;}
+.announcearrow-right { background-position: -397px -573px; width: 22px; height: 22px; transition: all .2s ease-in-out;}
 .check-analytics { background-position: -955px -578px; width: 22px; height: 21px; }
 .knowarrow-left { background-position: -978px -578px; width: 22px; height: 50px; }
+.knowarrow-left:hover{animation: bounce 1s; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); filter: grayscale(100%);}
 .knowarrow-right { background-position: -1001px -578px; width: 22px; height: 50px; }
+.knowarrow-right:hover{animation: bounce 1s;-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); filter: grayscale(100%);}
 .reccheck { background-position: -1024px -578px; width: 22px; height: 20px; }
 .reccheck:hover { background-position: -1024px -578px; width: 22px; height: 20px; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); filter: grayscale(100%);}
 .help { background-position: -1047px -578px; width: 20px; height: 20px; transition: all .2s ease-in-out;}
@@ -56,16 +58,16 @@
 .recshadow { background-position: -1px -599px; width: 19px; height: 12px; }
 .checkshadow { background-position: -1183px -111px; width: 16px; height: 12px; margin-right: 6px;}
 .fb-active { background-position: -1183px -124px; width: 16px; height: 16px; }
-.fb { background-position: -1183px -141px; width: 16px; height: 16px; }
+.fb { background-position: -1183px -141px; width: 16px; height: 16px; margin-right: 5px; }
 .foursquare:hover { background-position: -1183px -158px; width: 16px; height: 16px; }
-.foursquare { background-position: -1183px -175px; width: 16px; height: 16px; }
+.foursquare { background-position: -1183px -175px; width: 16px; height: 16px; margin-left: 2.5px;}
 .twitter:hover { background-position: -1183px -192px; width: 16px; height: 16px; }
-.twitter { background-position: -1183px -209px; width: 16px; height: 16px; }
+.twitter { background-position: -1183px -209px; width: 16px; height: 16px; margin-right: 2.5px;}
 .youtube:hover { background-position: -1183px -226px; width: 16px; height: 16px; }
-.youtube { background-position: -1183px -243px; width: 16px; height: 16px; }
+.youtube { background-position: -1183px -243px; width: 16px; height: 16px; margin-left: 5px;}
 .banner-left { background-position: -1183px -260px; width: 15px; height: 40px; position: absolute; top:25%;left:-15px;}
 .banner-right { background-position: -1183px -301px; width: 15px; height: 40px;position: absolute; top:25%;right:-15px; }
 .footerarrow { background-position: -1183px -342px; width: 14px; height: 9px; }
-.lightbulb { background-position: -1183px -352px; width: 14px; height: 23px; }
+.lightbulb { background-position: -1183px -352px; width: 14px; height: 23px; margin-right: 8px; }
 .lightbulb:hover{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); filter: grayscale(100%);}
 .lightbulbshadow { background-position: -955px -362px; width: 12px; height: 12px; }
