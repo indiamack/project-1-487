@@ -729,61 +729,125 @@ h2{
 /* Mobile -----------------------------------------------*/
 @media screen and (max-width:767px){
 
+  .site{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 115px 100px 85px 130px 100px 100px 100px 100px 100px 100px 100px 100px 230px 120px;
+    grid-column-gap: 10px;
+  }
     /* Header -------------------*/
+    .head{
+      padding-left: 10%;
+    }
 
+    .head h1{
+      font-size: 24px;
+    }
+
+    .header-right{
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      align-items: center;
+      padding-right: 10%;
+    }
 
     /* Navbar -------------------*/
 
     /* Search -------------------*/
+    .search{
+      grid-column: 1/9;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
 
+    .search h1{
+      transform: scale(0.7);
+    }
+
+    .search-container{
+        display: flex;
+        flex-wrap: none;
+        align-items: center;
+        transform: scale(0.7);
+    }
     /* Announcements -------------------*/
+    .announce{
+      grid-column: 1/9;
+    }
 
+    .text-container h3, p{
+      transform: scale(0.8);
+    }
+
+    .text-container p{
+      width: 50%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
     /* Tasks -------------------*/
     .tasks{
       grid-column: 1/9;
-      background: #2BB9AE;
-      grid-row-end: span 2;
     }
 
+    .tk h2{
+      margin: 0;
+    }
+
+    .task-item{
+      width: 80%;
+      margin: auto;
+    }
+
+    .divider-2{
+      margin: 0;
+    }
     /* Analytics -------------------*/
     .ana{
       grid-column: 1/9;
-      background: #B8DCF7;
-      grid-row-end: span 3;
     }
 
+    .social{
+      width: 80%;
+      margin:auto;
+      transform: scale(0.7);
+    }
+
+    .piegraphs{
+      transform: scale(0.8);
+    }
+
+    .bargraph{
+      transform: scale(0.5);
+    }
+    .piepgrahs{
+      padding-right: 10%;
+    }
     /* Recommendations -------------------*/
     .recs{
       grid-column: 1/9;
-      background: #105F59;
-      grid-row-end: span 4;
     }
 
     /* Customers & Contacts -------------------*/
     .contact{
       grid-column: 1/9;
-      background: #B0F7F4;
-      grid-row-end: span 2;
     }
 
     /* Did You Know? -------------------*/
     .know{
       grid-column: 1/9;
-      background: #6FD2EA;
     }
 
     /* Watch/Ad Banner -------------------*/
     .watch{
       grid-column: 1/9;
-      background: #A2FA97;
     }
 
     /* Footer-------------------*/
     .footer{
       grid-column: 1/9;
-      background: #76BDF2;
     }
 
-  
+
 }
 }
