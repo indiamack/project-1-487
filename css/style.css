@@ -840,7 +840,6 @@ h2{
     }
 
     .rec-item{
-      transform: scale(1.5);
       padding-left: 20%;
       padding-right:20%;
       flex-direction: column;
@@ -851,6 +850,11 @@ h2{
       width:80%;
       margin:auto;
       justify-content:center;
+      transform: scale(1.5);
+    }
+
+    .rec-icon{
+      transform: scale(1.5);
     }
 
     .recs h2{
